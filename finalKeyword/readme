@@ -1,0 +1,1 @@
+functions with final can't be overrided. This grants subclasses haven't function member with the same name.
