@@ -1,6 +1,10 @@
 #include <iostream>
 
-unsigned long long int operator"" _seconds(unsigned long long int seconds) {
+namespace Test {
+	using Time = unsigned long long int;
+}
+
+constexpr Test::Time operator"" _seconds(const unsigned long long int seconds) {
 	return seconds * 1000;
 }
 
